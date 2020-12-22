@@ -45,7 +45,7 @@ client.on("messageReactionAdd", (reaction, user) => {
 
     //Reaction regles
     if(reaction.message.id === config.id.message.regle){
-        if(reaction.emoji.id === "789810604973490186"){
+        if(reaction.emoji.id === "685888621361758245"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.add(config.role.Vagabon).then(mbr => {
                 console.log(`Rôle Vagabon attribué avec succès pour ${mbr.displayName}`);
@@ -67,7 +67,7 @@ client.on("messageReactionAdd", (reaction, user) => {
             });
         }
         //Phasmophobia
-        if(reaction.emoji.id === "789808055017144321"){
+        if(reaction.emoji.id === "776085983220203540"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.add(config.role.Phasmophobia).then(mbr => {
                 console.log(`Rôle Phasmophobia attribué avec succès pour ${mbr.displayName}`);
@@ -76,7 +76,7 @@ client.on("messageReactionAdd", (reaction, user) => {
             });
         }
         //Apex Legend
-        if(reaction.emoji.id === "789808099149479986"){
+        if(reaction.emoji.id === "775406799770615888"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.add(config.role.ApexLegend).then(mbr => {
                 console.log(`Rôle Apex Legend attribué avec succès pour ${mbr.displayName}`);
@@ -85,7 +85,7 @@ client.on("messageReactionAdd", (reaction, user) => {
             });
         }
         //Rocket League
-        if(reaction.emoji.id === "789808006929055744"){
+        if(reaction.emoji.id === "776083417438748713"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.add(config.role.RocketLeague).then(mbr => {
                 console.log(`Rôle Rocket League attribué avec succès pour ${mbr.displayName}`);
@@ -125,7 +125,7 @@ client.on("messageReactionRemove", (reaction, user) => {
             });
         }
         //Phasmophobia
-        if(reaction.emoji.id === "789808055017144321"){
+        if(reaction.emoji.id === "776085983220203540"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.remove(config.role.Phasmophobia).then(mbr => {
                 console.log(`Rôle Phasmophobia retiré avec succès pour ${mbr.displayName}`);
@@ -134,7 +134,7 @@ client.on("messageReactionRemove", (reaction, user) => {
             });
         }
         //Apex Legend
-        if(reaction.emoji.id === "789808099149479986"){
+        if(reaction.emoji.id === "775406799770615888"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.remove(config.role.ApexLegend).then(mbr => {
                 console.log(`Rôle Apex Legend retiré avec succès pour ${mbr.displayName}`);
@@ -143,7 +143,7 @@ client.on("messageReactionRemove", (reaction, user) => {
             });
         }
         //Rocket League
-        if(reaction.emoji.id === "789808006929055744"){
+        if(reaction.emoji.id === "776083417438748713"){
             var member=reaction.message.guild.members.cache.find(member => member.id === user.id);
             member.roles.remove(config.role.RocketLeague).then(mbr => {
                 console.log(`Rôle Rocket League retiré avec succès pour ${mbr.displayName}`);
