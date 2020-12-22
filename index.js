@@ -28,13 +28,13 @@ client.on('error', console.error);
 //message d'arriver sur le serveur
 client.on("guildMemberAdd", member => {
     member.send(`Bienvenue à toi ${member.displayName}, \nJe suis le géran de cette établissment et avant de venire t'assoir et de prendre une bonne bière je te consseille de lire le reglement de cette éblissement. \nCela t'évitera de nombreux enuis :wink: \nBon moi je retourne m'en prendre une j'ai soif :beer:`);
-    console.log(`${mbr.displayName} a rejoin le server`)
+    console.log(`${member.displayName} a rejoin le server`)
     member.guild.channels.cache.find(channel => channel.id === config.id.salon.arriver).send(`Un grand Bienvenue à ${member.user} qui a rejoins ${member.guild} :tada: Buvons a sa santé !!!!! :beers:`);
 })
 
 //message d'aurevoir du serveur
 client.on("guildMemberRemove", member => {
-    console.log(`${mbr.displayName} a quitter le server`)
+    console.log(`${member.displayName} a quitter le server`)
     member.guild.channels.cache.find(channel => channel.id === config.id.salon.depart).send(`Une minute de silence à ${member.user} qui nous a quitter :cry:... Et maintant une grosse bière !!!!! :beers:`);
 })
 
